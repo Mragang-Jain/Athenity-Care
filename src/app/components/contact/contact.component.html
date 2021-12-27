@@ -1,0 +1,101 @@
+    <!-- =====================================
+        ==== Start Contact -->
+
+        <section class="contact section-padding" data-scroll-index="5">
+          <div class="container">
+              <div class="row">
+                  <div class="section-head text-center col-lg-8 col-md-10 offset-md-1 offset-lg-2">
+                      <h6>Get in touch!</h6>
+                      <h4><u>Contact Us</u></h4>
+                      <!-- <svg class="bord-botm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0px" y="0px">
+                          <polyline fill="transparent" stroke="#ee3158" stroke-width="2" stroke-miterlimit="10" points="51.269,6.716 45.685,2.031 39.086,6.716 32.487,2.031 
+                              26.904,6.716 20.812,2.031 14.721,6.716 7.614,2.031 2.538,6.716 " />
+                      </svg> -->
+                  </div>
+  
+                  <div class="col-lg-8 col-md-10 offset-md-1 offset-lg-2"> 
+                      <form class="form mb-80" id="contact-form" (submit)="onSubmit();" [formGroup]="contactForm" >
+  
+                          <h6><div class="messages" *ngIf="contactForm.touched && contactForm.invalid" style="color: red;" >please fill all the details correctly.</div></h6>
+                        <h6><div class="messages" *ngIf="contactForm.pristine && successSubmision" style="color: green;" >thank you for your successfully submision !!</div></h6>
+                          <br>
+                          <div class="controls">
+  
+                              <div class="row">
+  
+                                  <div class="col-lg-6">
+                                      <div class="form-group">
+                                          <input id="form_name" type="text" formControlName="name" placeholder="Name*" required="required">
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-6">
+                                      <div class="form-group">
+                                          <input id="form_email" type="email" formControlName="email" placeholder="Email*" required="required">
+                                      </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                      <div class="form-group">
+                                          <input id="form_phone" type="text" formControlName="mobile" placeholder="Phone*" required="required">
+                                      </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                      <div class="form-group">
+                                          <input id="form_subject" formControlName="subject" type="text" placeholder="Subject*" required="required">
+                                      </div>
+                                  </div>
+                                  <div class="col-md-12">
+                                      <div class="form-group">
+                                          <textarea id="form_message" formControlName="message" placeholder="Message*" required="required"></textarea>
+                                      </div>
+                                  </div>
+  
+                                  <div class="col-md-12 text-center">
+                                      <button type="submit" class="butn butn-bg"><span>Send Message</span></button>
+                                  </div>
+
+  
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+                  <div class="col-lg-12 contact-info">
+                      <div class="row">
+                          <div class="col-lg-4 col-md-6">
+                              <div class="item mb-sm30">
+                                  <span class="icon"><i class="fas fa-phone"></i></span>
+                                  <div class="cont">
+                                      <h6>Phone : </h6>
+                                      <p>404-590-4174</p>
+                                      <!-- <p>F : 307-316-0411</p> -->
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6">
+                              <div class="item mb-md30">
+                                  <span class="icon"><i class="fas fa-envelope"></i></span>
+                                  <div class="cont">
+                                      <h6>Email : </h6>
+                                      <p>info@finixtechnocrates.com</p>
+                                      <p>hr@finixtechnocrates.com</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
+                              <div class="item">
+                                  <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+                                  <div class="cont">
+                                      <h6>Address : </h6>
+                                    <p>As a result of the pandemic, we are now 100% virtual.</p>                                    
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+  
+              </div>
+          </div>
+      </section>
+  
+      <!-- End Contact ====
+          ======================================= -->  

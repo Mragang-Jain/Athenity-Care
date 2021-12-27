@@ -1,0 +1,116 @@
+
+
+    <!-- =====================================
+        ==== Start Footer -->
+
+        <footer class="dark">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-3 col-md-6">
+                      <div class="item mb-sm50">
+                          <!-- Logo -->
+                          <a [routerLink]="['']">
+                            <img src="assets/img/logo-dark.png" class="logoimg light-logo" alt="logo">
+                          </a>
+                          <a class="logo" [routerLink]="['']">
+                          Finix Technocrates
+                              <!-- <img src="assets/img/logo-light.png" alt="logo"> -->
+                          </a>
+                          <p>We’re full service which means we’ve got you covered on design and content right through
+                              to digital.</p>
+                      </div>
+                  </div>
+  
+                  <div class="col-lg-2 col-md-3 col-sm-4">
+                      <!-- <div class="item mb-sm50">
+                          <div class="ftitle">
+                              <h5>Compnay</h5>
+                          </div>
+                          <ul>
+                              
+                              <li><a [routerLink]="">Email Marketing</a></li>
+                              <li><a [routerLink]="">Social Media</a></li>
+                              <li><a [routerLink]="">Mobile Apps</a></li>
+                          </ul>
+                      </div> -->
+                  </div>
+  
+                  <div class="col-lg-2 col-md-3 col-sm-4">
+                      <div class="item mb-md50 mb-sm50">
+                          <div class="ftitle">
+                              <h5>Company</h5>
+                          </div>
+                          <ul style="cursor: pointer;">
+                              <li><a (click)='handleTraining()'>Training Blogs</a></li>
+                              <li><a [routerLink]="['career']">Career</a></li>
+                              <!-- <li><a [routerLink]="">Home</a></li>
+                              <li><a [routerLink]="['career']">Career</a></li>
+                              <li><a [routerLink]="">Customers</a></li>
+                              <li><a [routerLink]="">About Us</a></li> -->
+                          </ul>
+                      </div>
+                  </div>
+  
+                  <div class="col-lg-2 col-md-3 col-sm-4">
+                      <!-- <div class="item mb-sm50">
+                          <div class="ftitle">
+                              <h5>Support</h5>
+                          </div>
+                          <ul>
+                              <li><a [routerLink]="">Contact Us</a></li>
+                              <li><a [routerLink]="">Community</a></li>
+                              <li><a [routerLink]="">FAQ</a></li> 
+                              <li><a [routerLink]="">Login</a></li>
+                              <li><a [routerLink]="">Sign Up</a></li>
+                          </ul>
+                      </div> -->
+                  </div>
+  
+                  <div class="col-lg-3 col-md-9">
+                      <div class="item">
+                          <div class="ftitle">
+                              <h5>Subscribe</h5>
+                          </div>
+                          <form [formGroup]="frmSubscriber" >
+                              <input type="Email" formControlName="email" placeholder="Type Your Email">
+                              <a [routerLink]="" class="butn butn-bg" (click)="submitSubscriber();">
+                                  <span>Subscribe</span>
+                              </a>
+                              <p *ngIf="frmSubscriber.touched && frmSubscriber.invalid" style="color: red;">Please enter valid email address</p>
+                              <p *ngIf="frmSubscriber.pristine && successSubmision" style="color: green;">your subscription successfully submited !!</p>
+                          </form>
+                      </div>
+                  </div>
+  
+              </div>
+          </div>
+          <div class="sub-footer">
+              <div class="container">
+  
+                  <div class="social">
+                      <!-- <a [routerLink]="" class="icon">
+                          <i class="fab fa-facebook-f"></i>
+                      </a>
+                      <a [routerLink]="" class="icon">
+                          <i class="fab fa-twitter"></i>
+                      </a> -->
+                      <a href="https://www.linkedin.com/company/finix-technocrates" target="blank" lass="icon">
+                          <i class="fab fa-linkedin-in"></i>
+                      </a>
+                      <!-- <a [routerLink]="" class="icon">
+                          <i class="fab fa-behance"></i>
+                      </a>
+                      <a [routerLink]="" class="icon">
+                          <i class="fab fa-instagram"></i>
+                      </a> -->
+                  </div>
+  
+                  <p>&copy; 2021 Finix Technocrates. All Rights Reserved.</p>
+  
+              </div>
+          </div>
+      </footer>
+  
+      <!-- End Footer ====
+          ======================================= -->
+  

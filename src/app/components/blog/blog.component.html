@@ -1,0 +1,167 @@
+
+<!-- projects Start -->
+
+    <section class="blog section-padding" data-scroll-index="4">
+          <div class="container">
+              <div class="row">
+                  <div class="section-head text-center col-lg-8 col-md-10 offset-md-1 offset-lg-2">
+                      <!-- <h6>Our Projects</h6> -->
+                      <h4>Our Projects</h4>
+                      <svg class="bord-botm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0px" y="0px">
+                          <polyline fill="transparent" stroke="#ee3158" stroke-width="2" stroke-miterlimit="10" points="51.269,6.716 45.685,2.031 39.086,6.716 32.487,2.031 
+                                  26.904,6.716 20.812,2.031 14.721,6.716 7.614,2.031 2.538,6.716 " />
+                      </svg>
+                  </div>
+  
+                  <div class="col-lg-4" *ngFor="let proj of projects">
+                      <div class="item mb-md50">
+                          <div class="post-img">
+                              <div class="img">
+                                  <img [src]="proj.image" alt="">
+                              </div>
+                          </div>
+                          <div class="cont">
+                              <h6><a>{{proj.title}}</a></h6>
+                              <p>{{proj.sortDesc}}</p>
+                              <a routerLink="{{proj.id}}" class="more">Read More <i class="fas fa-chevron-right"></i></a>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <!-- <div class="col-lg-4">
+                      <div class="item mb-md50">
+                          <div class="post-img">
+                              <div class="img">
+                                  <img src="assets/img/blog/2.jpg" alt="">
+                              </div>
+                          </div>
+                          <div class="cont">
+                              <div class="info">
+                                  <a href="#0">By : Admin</a>
+                                  <a href="#0">06 Aug 2017</a>
+                                  <a href="#0" class="tag bg-pu">ThemeForest</a>
+                              </div>
+                              <h6><a href="#0">Awesome New Skills in February 2019</a></h6>
+                              <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum
+                                  has been the dummy text ever</p>
+                              <a href="#0" class="more">Read More <i class="fas fa-chevron-right"></i></a>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="col-lg-4">
+                      <div class="item">
+                          <div class="post-img">
+                              <div class="img">
+                                  <img src="assets/img/blog/3.jpg" alt="">
+                              </div>
+                          </div>
+                          <div class="cont">
+                              <div class="info">
+                                  <a href="#0">By : Admin</a>
+                                  <a href="#0">06 Aug 2017</a>
+                                  <a href="#0" class="tag bg-or">Envato</a>
+                              </div>
+                              <h6><a href="#0">What Impact Did Envato Make in 2018?</a></h6>
+                              <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum
+                                  has been the dummy text ever</p>
+                              <a href="#0" class="more">Read More <i class="fas fa-chevron-right"></i></a>
+                          </div>
+                      </div>
+                  </div> -->
+  
+              </div>
+          </div>
+    </section> 
+  
+<!-- Project ends -->
+
+
+    <!-- =====================================
+        ==== Start Blog -->
+
+        <!-- <section class="blog section-padding" data-scroll-index="4">
+          <div class="container">
+              <div class="row">
+                  <div class="section-head text-center col-lg-8 col-md-10 offset-md-1 offset-lg-2">
+                      <h6>Our Blog</h6>
+                      <h4>Latest News</h4>
+                      <svg class="bord-botm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0px" y="0px">
+                          <polyline fill="transparent" stroke="#ee3158" stroke-width="2" stroke-miterlimit="10" points="51.269,6.716 45.685,2.031 39.086,6.716 32.487,2.031 
+                                  26.904,6.716 20.812,2.031 14.721,6.716 7.614,2.031 2.538,6.716 " />
+                      </svg>
+                  </div>
+  
+                  <div class="col-lg-4">
+                      <div class="item mb-md50">
+                          <div class="post-img">
+                              <div class="img">
+                                  <img src="assets/img/blog/1.jpg" alt="">
+                              </div>
+                          </div>
+                          <div class="cont">
+                              <div class="info">
+                                  <a href="#0">By : Admin</a>
+                                  <a href="#0">06 Aug 2017</a>
+                                  <a href="#0" class="tag bg-gr">WordPress</a>
+                              </div>
+                              <h6><a href="#0">48 Best WordPress Themes</a></h6>
+                              <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum
+                                  has been the dummy text ever</p>
+                              <a href="#0" class="more">Read More <i class="fas fa-chevron-right"></i></a>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="col-lg-4">
+                      <div class="item mb-md50">
+                          <div class="post-img">
+                              <div class="img">
+                                  <img src="assets/img/blog/2.jpg" alt="">
+                              </div>
+                          </div>
+                          <div class="cont">
+                              <div class="info">
+                                  <a href="#0">By : Admin</a>
+                                  <a href="#0">06 Aug 2017</a>
+                                  <a href="#0" class="tag bg-pu">ThemeForest</a>
+                              </div>
+                              <h6><a href="#0">Awesome New Skills in February 2019</a></h6>
+                              <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum
+                                  has been the dummy text ever</p>
+                              <a href="#0" class="more">Read More <i class="fas fa-chevron-right"></i></a>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="col-lg-4">
+                      <div class="item">
+                          <div class="post-img">
+                              <div class="img">
+                                  <img src="assets/img/blog/3.jpg" alt="">
+                              </div>
+                          </div>
+                          <div class="cont">
+                              <div class="info">
+                                  <a href="#0">By : Admin</a>
+                                  <a href="#0">06 Aug 2017</a>
+                                  <a href="#0" class="tag bg-or">Envato</a>
+                              </div>
+                              <h6><a href="#0">What Impact Did Envato Make in 2018?</a></h6>
+                              <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum
+                                  has been the dummy text ever</p>
+                              <a href="#0" class="more">Read More <i class="fas fa-chevron-right"></i></a>
+                          </div>
+                      </div>
+                  </div>
+  
+              </div>
+          </div>
+      </section>  -->
+  
+      <!-- End Blog ====
+              ======================================= -->  
+
+    

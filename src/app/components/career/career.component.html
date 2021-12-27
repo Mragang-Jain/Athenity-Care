@@ -1,0 +1,67 @@
+<section class="contact section-padding" data-scroll-index="5">
+  <div class="container">
+      <div class="row">
+            <div class="section-head text-center col-lg-8 col-md-10 offset-md-1 offset-lg-2">
+              <h6>We are looking for Talent like you.</h6>
+              <h4>Join Us</h4>
+              <svg class="bord-botm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px" y="0px">
+                  <polyline fill="transparent" stroke="#ee3158" stroke-width="2" stroke-miterlimit="10" points="51.269,6.716 45.685,2.031 39.086,6.716 32.487,2.031 
+                      26.904,6.716 20.812,2.031 14.721,6.716 7.614,2.031 2.538,6.716 " />
+              </svg>
+          </div>
+
+          <div class="col-lg-8 col-md-10 offset-md-1 offset-lg-2">
+              <form class="form mb-80" id="contact-form" (submit)="onSubmit();" [formGroup]="resumeForm" enctype="multipart/form-data" >
+
+                  <h6><div class="messages" *ngIf="resumeForm.touched && resumeForm.invalid" style="color: red;" >please fill all the details correctly.</div></h6>
+                  <h6><div class="messages" *ngIf="resumeForm.pristine && successSubmision" style="color: green;" >thank you for your successfully submision !!</div></h6>
+                  <br>
+                  <div class="controls">
+
+                      <div class="row">
+                          <div class="col-lg-12">
+                            <div class="form-group">
+                                <input id="form_name" type="text" formControlName="name" placeholder="Name*" required="required">
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="form-group">
+                                <input id="form_name" type="text" formControlName="designation" placeholder="current designation*" required="required">
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="form-group">
+                                <input id="form_name" type="text" formControlName="apply" placeholder="Applied For*" required="required">
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                              <div class="form-group">
+                                  <input id="form_email" type="email" formControlName="email" placeholder="Email*" required="required">
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                <span>Ready For Relocation ?</span>
+                                <span><input _ngcontent-c3="" formControlName="relocation" id="form_phone" placeholder="Ready for relocation" type="checkbox" style="
+                                    margin-left: 15px;
+                                "></span>
+                              </div>
+                          </div>
+                          <div class="col-md-12">
+                              <div class="form-group">
+                                  <input id="form_file" type="file" formControlName="upload" (change)="handleFileInput($event.target.files);" placeholder="Resume File">
+                              </div>
+                          </div>
+
+                          <div class="col-md-12 text-center">
+                              <button type="submit" class="butn butn-bg"><span>Submit</span></button>
+                          </div>
+                      </div>
+                  </div>
+              </form>
+          </div>
+
+      </div>
+  </div>
+</section>
