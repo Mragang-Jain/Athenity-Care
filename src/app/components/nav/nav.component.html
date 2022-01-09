@@ -4,13 +4,13 @@
         <div class="container">
 
             <!-- Logo -->
-            <h1>
+            <h1 style="display: flex;">
             <a [routerLink]="['/']">
                 <img src="assets/img/logo-dark.png" class="logoimg light-logo" alt="logo">
                 <img src="assets/img/logo-dark.png" class="logoimg dark-logo" alt="logo">
             </a>
             <a class="logo" [routerLink]="['']">
-                Finix Technocrates
+                Athenity Care
             </a>
             </h1>
 
@@ -26,10 +26,10 @@
                         <a class="nav-link" [routerLink]="['']">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" [routerLink]="['about']" >About</a>
+                        <a class="nav-link" [routerLink]="['about']" >Clinical Summary</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" [routerLink]="['training']" >Training</a>
+                        <a class="nav-link" [routerLink]="['training']" >Treatment Facility</a>
                     </li>
                     <!-- <li class="nav-item">
                         <a class="nav-link" [routerLink]="['process']">Process</a>
@@ -41,11 +41,13 @@
                         <a class="nav-link" [routerLink]="" data-scroll-nav="4">Blog</a>
                     </li> -->
                     <li class="nav-item">
-                        <a class="nav-link" [routerLink]="['project-list']" >Projects</a>
+                        <a class="nav-link" [routerLink]="['project-list']" >Ward Facility</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" [routerLink]="['contact']" >Contact</a>
                     </li>
+                    
+                  
                     <!-- <button type="button" class="btn btn-primary">SignOut</button> -->
                     <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">  Demo Sites  </a>
@@ -71,6 +73,12 @@
                     </li> -->
                 </ul>
             </div>
+            <span class="nav-item" style="cursor: pointer;">
+                <a class="nav-link nalink" > Facility Avaliable (24 X 7)</a>
+            </span>
+            <!-- <span class="nav-item">
+                <a class="nav-link"  ></a>
+            </span> -->
         </div>
     </nav>
 

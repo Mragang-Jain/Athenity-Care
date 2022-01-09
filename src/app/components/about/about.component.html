@@ -6,10 +6,15 @@
               <div class="row">
                   <div class="col-lg-10 offset-lg-1">
                       <div class="intro text-center row mb-80">
+                        
                           <div class="col-lg-10 offset-lg-1">
+                            
                               <div class="mb-20">
                                   <h6>Who we are?</h6>
-                                  <h4>Finix Technocrates <br> your software solution partner</h4>
+                                  <h4>Athenity Care | 
+                                    एथेनिटी केयर </h4>
+                                    <br>
+                                   <h6><u> Multi Super Speciality Hospital </u></h6> 
                               </div>
                               <p>Finix Technocrates provide custom software solutions and project management support for
                                   business seeking an alternative to high-priced consulting firms. Our focus on
@@ -17,6 +22,7 @@
                                   rapid pace. With a impressive client roster including both start-ups and large
                                   companies we have proved ourselves. We can provide high-quality, value driven software designs as
                                   a reasonable price-point.</p>
+                                  <!-- <img src="assets/img/name.jpg" /> -->
                               <svg class="bord-botm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                   x="0px" y="0px">
                                   <polyline fill="transparent" stroke="#ee3158" stroke-width="2" stroke-miterlimit="10"
@@ -27,29 +33,27 @@
                       </div>
                   </div>
   
-                  <div class="col-lg-4 col-md-6">
+                  <div class="col-lg-4 col-md-6" *ngFor="let proj of projects" >
                       <div class="item text-center mb-50">
-                          <span class="icon bg-gr shadow"><i class="ti-desktop"></i></span>
-                          <h5><span></span>Web Development</h5>
-                          <p>We offer full-scale software solutions for mobile, web and desktop that will enable our clients to rise as industry leaders within their respective industry.</p>
+                          <span ><img style="height: 200px;" [src]="proj.image"  /></span>
+                          <br>
+                          <br>
+                          <h5>{{ proj.heading }}</h5>
+                          <p>{{proj.content}}</p>
                       </div>
                   </div>
   
-                  <div class="col-lg-4 col-md-6">
-                      <div class="item active text-center mb-50">
-                          <span class="icon bg-bl shadow"><i class="ti-game"></i></span>
-                          <h5><span></span>Web & Mobile Design</h5>
-                          <p>Our designers recognize the fact that usability, functionality, and visualization are the three important factors of an application interface or application.</p>
-                      </div>
-                  </div>
-  
-                  <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 mb-50">
+                  <!-- <div class="col-lg-4 col-md-12" >
+                  <img [src]="val" style="width: 60rem; height: 30rem;"  />
+                 </div> -->
+
+                   <!-- <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 mb-50">
                       <div class="item text-center">
                           <span class="icon bg-pu shadow"><i class="ti-server"></i></span>
                           <h5><span></span>Database Services</h5>
                           <p>We know the importance of your data security, so we provide complete data security with our database services.</p>
                       </div>
-                  </div>
+                  </div> -->
               </div>
           </div>
   
@@ -59,7 +63,7 @@
   
                       <div class="col-lg-6">
                           <div class="about mb-50">
-                              <h6>Why To Choose Finix Technocrates?</h6>
+                              <h6>Why To Choose Athenity Care? </h6>
                               <h4>We love building meaningful and useful software products.</h4>
                               <p>We’re full service which means we’ve got you covered on design and content right through
                                   to digital. You’ll form a lasting relationship with us, collaboration is central to
@@ -77,7 +81,7 @@
   
                       <div class="col-lg-6">
                           <div class="img mb-50">
-                              <img src="assets/img/svg/3.svg" alt="">
+                              <img src="assets/img/svg/sss.jpeg" alt="">
                           </div>
                       </div>
                   </div>

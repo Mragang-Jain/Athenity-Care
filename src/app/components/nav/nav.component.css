@@ -3,3 +3,28 @@
     font-weight: normal;
     line-height: normal;
 }
+
+
+.nalink {
+    animation-duration: 1200ms;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    -webkit-animation:blink 1200ms infinite; /* Safari and Chrome */
+}
+@keyframes blink {
+    from {
+        color:red;
+    }
+    to {
+        color:white;
+    }
+}
+@-webkit-keyframes blink {
+    from {
+        color:red;
+    }
+    to {
+        color:white;
+    }
+}

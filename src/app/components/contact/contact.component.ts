@@ -24,15 +24,22 @@ export class ContactComponent implements OnInit {
   }
 
   public onSubmit() {
-    if(this.contactForm.valid){
-      this.svc.addNewContact(this.contactForm.value).then(res => {
-        this.successSubmision = true;        
-        this.contactForm.reset();
-      }).catch(err => {
-        this.successSubmision = false;
-        console.log(err);
-      })
-    }
+    window.open(
+      `mailto:${"D"}?subject=${encodeURIComponent(
+        "DDDD"
+      )}&body=${encodeURIComponent("DD")} (${encodeURIComponent(
+        "DBDH"
+      )}): ${encodeURIComponent("DVDH")}`
+    );
+    // if(this.contactForm.valid){
+    //   this.svc.addNewContact(this.contactForm.value).then(res => {
+    //     this.successSubmision = true;        
+    //     this.contactForm.reset();
+    //   }).catch(err => {
+    //     this.successSubmision = false;
+    //     console.log(err);
+    //   })
+    // }
   }
 
 }
