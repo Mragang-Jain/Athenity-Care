@@ -1,4 +1,4 @@
-# Finix UI 
+# Athenity Care UI 
 
 
 # Client
