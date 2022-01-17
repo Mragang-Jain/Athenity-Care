@@ -12,6 +12,10 @@
     animation-direction: alternate;
     -webkit-animation:blink 1200ms infinite; /* Safari and Chrome */
 }
+
+.active{
+    color: #FFE97A !important;
+}
 @keyframes blink {
     from {
         color:red;
