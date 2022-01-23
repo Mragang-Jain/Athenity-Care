@@ -81,9 +81,26 @@
                           </div>
                       </div>
   
-                      <div class="col-lg-6">
-                          <div class="img mb-50">
-                              <img src="assets/img/svg/sss.jpeg" alt="">
+                      <div class="col-lg-6" >
+                          <div class="item mb-50">
+                           
+                            <div class="row" style="margin-top: 50px;">
+                               
+                                <div class="col-md-4 login-form-1" >
+                                    <h6><u>Clinical Summary</u></h6>
+                                    <ul *ngFor="let item of list1">
+                                        <li>{{item}}</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 login-form-1">
+                                    <h6><u>Treatment Facility</u></h6>
+                                    <ul *ngFor="let it of list2">
+                                        <li>{{it }}</li>
+                                       
+                                    </ul>
+                                </div>
+                                </div>
+                            
                           </div>
                       </div>
                   </div>

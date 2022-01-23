@@ -10,6 +10,8 @@ export class AboutComponent implements OnInit {
   public projects = [];
   public val = 'assets/img/clinical/ventilator.jpg'
   public val2 = 'assets/img/name.jpg'
+  public list1 = ["ECG", "EEG", "X-RAY", "VENTILATOR", "PEDIATRICS & FETAL ECHOCARDIOGRAPHY" , "TELE MEDICINE", "TREAD MILL TEST (TMT)", "PATHOLOGY" , "PACE-MAKER IMPLANTATION"]
+  public list2 = ["General Medicine", "Cardiology" , "Gastroenterology", "Nuero & Spine", "General & Laparoscopy", "Ortho", "Oncology" , "Urology", "Gynaecology", "Burn Unit" , "Plastic & Cosmetic Surgery" , "Trauma & Critical Care"]
   constructor() { }
 
   ngOnInit() {

@@ -1,0 +1,12 @@
+.row{
+    justify-content: center;
+}
+
+ul li{
+    list-style-type: disc;
+    margin: 5px; 
+}
+
+h6{
+    margin-bottom: 25px;
+}

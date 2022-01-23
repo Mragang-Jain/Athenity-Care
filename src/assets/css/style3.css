@@ -387,12 +387,7 @@ a:hover {
 
 .nav-scroll .logo {
   padding: 15px 0;
-  color: #111;
-}
-
-.nav-scroll .logo {
-  padding: 15px 0;
-  color: #111;
+  color: #fff;
 }
 
 .nav-scroll .dark-logo {
@@ -404,7 +399,7 @@ a:hover {
 }
 
 .nav-scroll .logo:hover {
-  color: #111;
+  color: rgb(235, 10, 10);
 }
 
 .dark-logo {
@@ -1471,7 +1466,7 @@ footer {
 }
 
 footer .item .logo {
-  padding-top: 0;
+  padding-top: 10px;
 }
 
 footer .item p {
